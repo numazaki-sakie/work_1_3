@@ -43,17 +43,43 @@ img {
 
 /* ここまで */
 
-.header {
+header {
     width: 960px;
-    margin: 0 auto 30px;
-}
-
-.h1 {
-    text-align: center;
+    margin: 0 auto;
+    display: flex;
     align-items: center;
 }
 
-.header nav ul {
+div {
+    width: 960px;
+    margin: 0 auto 30px;
     display: flex;
+}
+
+h1 {
+    width: 480px;
+    height: 100px;
+    padding: 35px;
+    text-align: center;
+    align-items: center;
+    color: #333;
+}
+
+header nav ul {
+    display: flex;
+    width: 480px;
+    height: 100px;
     justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+li + li {
+    border-left: 1px solid #333;
 }
